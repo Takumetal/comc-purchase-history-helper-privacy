@@ -1,0 +1,9 @@
+# Only the reviewed static policy files and repository documentation may be tracked.
+*
+!/.gitignore
+!/.nojekyll
+!/README.md
+!/index.html
+!/privacy-ja.html
+!/privacy-en.html
+!/ui.css

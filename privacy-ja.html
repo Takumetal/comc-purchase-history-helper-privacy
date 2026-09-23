@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>プライバシーポリシー — COMC購入履歴ヘルパー</title>
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body class="policy">
+<main>
+  <header>
+    <p class="eyebrow">COMC購入履歴ヘルパー</p>
+    <h1>プライバシーポリシー</h1>
+    <p class="muted">最終更新日：2026年9月23日 · 運営者：Takumetal</p>
+    <nav aria-label="言語"><a href="privacy-ja.html" lang="ja" aria-current="page">日本語</a><a href="privacy-en.html" lang="en" hreflang="en">English</a></nav>
+    <p class="lead">COMC購入履歴ヘルパー（COMC Purchase History Helper）は、手動で取り込んだ購入履歴を端末内で照合するChrome拡張機能です。COMC公式とは無関係の補助ツールです。</p>
+  </header>
+  <section aria-labelledby="data">
+    <h2 id="data">1. 取り扱うデータ</h2>
+    <p>利用者が選択したCSVファイルを拡張機能内で読み取り、プレビューを表示します。「取り込みを確定」を選ぶと、次の購入記録を保存します。選択だけでは購入記録を保存しません。</p>
+    <ul>
+      <li>ItemID、競技、セット名、カード番号、商品説明</li>
+      <li>シリアル番号、製造枚数、購入価格、CSVに記録された購入日時、Returnフラグ</li>
+      <li>取り込み日時・件数・期間、照合・重複排除に必要な情報、警告、競合する記録の候補</li>
+    </ul>
+    <p>CSV全体の読み取り中には販売者欄（Purchased From）や未知の列も一時的に扱いますが、それらの値は購入記録に保存しません。生CSV全文、選択ファイルの名前・パスも保存しません。</p>
+    <p>表示言語とバッジのON／OFFを端末内に保存します。言語が「自動」の場合はChromeの表示言語を参照します。</p>
+  </section>
+  <section aria-labelledby="purpose">
+    <h2 id="purpose">2. 利用目的と商品ページの読み取り</h2>
+    <p>データは、購入履歴の保存・検索、同じ種類のカードとの照合、重複・競合の確認、バックアップ・復元、表示設定のために利用します。現在の所持状態を保証するものではありません。</p>
+    <p>対応するCOMCの公開商品ページで、表示中の競技・セット名・カード番号・商品説明・製造枚数等と商品リンクを読み取り、端末内の履歴と照合します。ページURLやタブ情報は対応ページの判定・処理のために一時的に使い、閲覧履歴として保存しません。</p>
+    <p>COMCへのログイン、購入履歴の自動取得、ページの自動巡回は行いません。アカウント・Inventory・決済ページは処理対象外です。Cookie、パスワード、トークン、決済情報を取得する機能はありません。</p>
+  </section>
+  <section aria-labelledby="storage">
+    <h2 id="storage">3. 保存先と保護</h2>
+    <p>購入履歴と設定は、利用中のChromeプロファイルの拡張機能用ローカルストレージに保存します。拡張機能によるクラウド同期はありません。履歴全体へアクセスできる範囲を拡張機能内部に制限しています。</p>
+    <p><strong>保存データと書き出したバックアップは、拡張機能では暗号化していません。</strong>端末・Chromeプロファイル・保存ファイルにアクセスできる人やソフトウェアからの読み取りを防ぐものではありません。</p>
+  </section>
+  <section aria-labelledby="sharing">
+    <h2 id="sharing">4. 外部送信とページ上の表示</h2>
+    <p>拡張機能はCSV・購入履歴・閲覧商品・診断情報を運営者や外部サーバーへ送信しません。解析、広告、外部AIサービス、自動エラー送信は利用しません。運営者は通常の利用によって端末内のデータを受け取りません。</p>
+    <p><strong>COMCページに追加したバッジは、そのページのスクリプトから見える可能性があります。</strong>表示中のカードに購入履歴があること、または一致候補があることをページ側に推測される余地があります。購入価格・日時・購入件数・購入ItemID・履歴全体はバッジやページ側への応答に含めません。</p>
+    <p>新規導入時のバッジ設定はONです。「COMCページにバッジを表示」をOFFにすると履歴状態をページに追加せず、拡張機能内で確認できます。OFFにしても履歴は削除されず、表示商品の読み取りは行われます。</p>
+    <p>COMCやChrome自体が行う通信は、この拡張機能による通信とは別です。外部サービスを利用する場合は、そのサービスの規約・プライバシーポリシーが適用されます。</p>
+  </section>
+  <section aria-labelledby="retention">
+    <h2 id="retention">5. 保存期間と削除</h2>
+    <p>購入履歴は、利用者が削除するか拡張機能をアンインストールするまで保持します。COMCからの発送・ログアウト、拡張機能の無効化、バッジOFFでは削除しません。新しいCSVにない古い記録も保持します。異なるCOMCアカウントのCSVを取り込むと履歴が混在します。</p>
+    <p>拡張機能内の「履歴を削除」は購入記録・競合・取り込み情報を削除し、設定を残します。「拡張機能の全データを削除」はこれらを削除し、設定も初期化します。アンインストールすると拡張機能のローカルデータが削除されます。</p>
+    <p>元のCSV、書き出したバックアップ、OSや利用者が別途作成したコピーは削除されません。それらは利用者が保存先で削除してください。端末上のデータを復元不能にする消去機能ではありません。</p>
+  </section>
+  <section aria-labelledby="backup">
+    <h2 id="backup">6. バックアップと復元</h2>
+    <p>利用者の操作で、購入履歴・競合・設定・取り込み情報を含むJSONファイルを書き出します。暗号化されていないため、共有フォルダや公開場所に置かないでください。保存先で利用者が設定したクラウド同期等は拡張機能の管理外です。</p>
+    <p>復元も手動でファイルを選択し、プレビューを確認して確定します。既定は既存履歴との統合です。置換を選ぶと追加の確認後に既存履歴を置き換えます。</p>
+  </section>
+  <section aria-labelledby="contact">
+    <h2 id="contact">7. 運営者・お問い合わせ</h2>
+    <p>運営者：Takumetal</p>
+    <p id="contact-details">X：<a href="https://x.com/takumetal55" target="_blank" rel="noopener noreferrer">@takumetal55</a>（DM、返信・メンション）</p>
+    <p>Xでお問い合わせいただいた場合、運営者がXのアカウント名とメッセージ内容を確認し、回答・不具合対応に必要な範囲で利用します。公開の返信・メンションは第三者も閲覧できるため、個別の購入情報を記載しないでください。X上のデータの取り扱いにはXのプライバシーポリシーが適用されます。</p>
+    <p>お問い合わせに購入履歴CSV、バックアップ、Cookie、パスワード、トークンを添付しないでください。画像を送る場合は購入情報・アカウント名などを隠してください。</p>
+  </section>
+  <section aria-labelledby="changes">
+    <h2 id="changes">8. ポリシーの変更</h2>
+    <p>機能やデータの取り扱いを変更した場合は、本文と最終更新日を更新し、拡張機能に同梱するポリシーに反映します。</p>
+  </section>
+  <section aria-labelledby="website">
+    <h2 id="website">9. Web版ポリシーの閲覧</h2>
+    <p>Web版はGitHub Pagesで提供します。Web版を閲覧すると、GitHubはセキュリティ目的でアクセス元のIPアドレスを記録・保存します。詳しくは<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHubのプライバシーステートメント</a>をご確認ください。</p>
+    <p>このアクセスは購入履歴の送信を伴いません。拡張機能に同梱されたポリシーを開く際にはGitHubへ接続しません。運営者によるアクセス解析や広告の埋め込みはありません。</p>
+  </section>
+</main>
+</body>
+</html>

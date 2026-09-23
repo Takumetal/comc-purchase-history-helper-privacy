@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Privacy policy — COMC Purchase History Helper</title>
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body class="policy">
+<main>
+  <header>
+    <p class="eyebrow">COMC Purchase History Helper</p>
+    <h1>Privacy policy</h1>
+    <p class="muted">Last updated: September 23, 2026 · Operator: Takumetal</p>
+    <nav aria-label="Language"><a href="privacy-ja.html" lang="ja" hreflang="ja">日本語</a><a href="privacy-en.html" lang="en" aria-current="page">English</a></nav>
+    <p class="lead">COMC Purchase History Helper is a Chrome extension that checks manually imported purchase history on your device. It is an unofficial tool and is not affiliated with COMC.</p>
+  </header>
+  <section aria-labelledby="data">
+    <h2 id="data">1. Data handled</h2>
+    <p>The extension reads the CSV file you select and displays a preview. It saves the following purchase records when you confirm the import. Selecting a file alone does not save purchase records.</p>
+    <ul>
+      <li>ItemID, sport, set name, card number and description</li>
+      <li>Serial number, quantity manufactured, purchase price, date and time recorded in the CSV, and Return flag</li>
+      <li>Import time, counts and date coverage, information needed for matching and deduplication, warnings and conflicting record candidates</li>
+    </ul>
+    <p>Reading the CSV temporarily involves the seller column (Purchased From) and unknown columns, but their values are not saved in purchase records. The raw CSV, selected file name and file path are not stored either.</p>
+    <p>Your language and badge settings are saved locally. When language is set to Automatic, the extension reads Chrome's display language.</p>
+  </section>
+  <section aria-labelledby="purpose">
+    <h2 id="purpose">2. Purpose and product page access</h2>
+    <p>Data is used to save and search purchase history, match card types, review duplicates and conflicts, back up and restore records, and apply display settings. Purchase history does not confirm current ownership.</p>
+    <p>On supported public COMC product pages, the extension reads displayed product information, including sport, set, card number, description, print run and product links, to check local history. Page URLs and tab information are used temporarily to identify supported pages and process them; they are not saved as browsing history.</p>
+    <p>The extension does not log in to COMC, automatically download purchase history or crawl pages. Account, Inventory and checkout pages are excluded. It has no function to collect cookies, passwords, tokens or payment credentials.</p>
+  </section>
+  <section aria-labelledby="storage">
+    <h2 id="storage">3. Storage and protection</h2>
+    <p>Purchase history and settings are stored in the extension's local storage in the Chrome profile you use. The extension does not sync them to the cloud. Access to the full history is restricted to the extension's trusted contexts.</p>
+    <p><strong>The extension does not encrypt stored data or exported backups.</strong> It does not prevent access by people or software that can read your device, Chrome profile or saved files.</p>
+  </section>
+  <section aria-labelledby="sharing">
+    <h2 id="sharing">4. Transmission and page visibility</h2>
+    <p>The extension does not send CSV files, purchase history, viewed products or diagnostics to the operator or external servers. It uses no analytics, advertising, external AI services or automatic error reporting. Normal use does not provide the operator with data stored on your device.</p>
+    <p><strong>Badges added to COMC pages may be visible to scripts on those pages.</strong> They may allow the page to infer that you have a purchase record or possible match for the displayed card. Purchase prices, dates, counts, purchased ItemIDs and the full history are not included in badges or responses to the page content script.</p>
+    <p>Badges are ON for new installations. Turning off “Show badges on COMC pages” stops adding history status to the page; you can still check it inside the extension. Turning badges off does not delete history, and displayed product information is still read.</p>
+    <p>COMC and Chrome make their own network connections independently of this extension. External services are governed by their own terms and privacy policies.</p>
+  </section>
+  <section aria-labelledby="retention">
+    <h2 id="retention">5. Retention and deletion</h2>
+    <p>History is kept until you delete it or uninstall the extension. Shipping cards, logging out of COMC, disabling the extension or turning badges off does not delete it. Older records absent from a newer CSV are retained. Importing CSV files from different COMC accounts mixes their histories.</p>
+    <p>“Delete history” removes purchase records, conflicts and import information while keeping settings. “Delete all extension data” also resets settings. Uninstalling removes the extension's local data.</p>
+    <p>These actions do not delete original CSV files, exported backups, or copies made by you or your operating system. Delete those at their saved locations. The extension does not provide forensic secure erasure.</p>
+  </section>
+  <section aria-labelledby="backup">
+    <h2 id="backup">6. Backup and restore</h2>
+    <p>On your request, the extension exports a JSON file containing purchase history, conflicts, settings and import information. It is not encrypted; keep it out of shared folders and public locations. Cloud syncing configured for your chosen location is outside the extension's control.</p>
+    <p>Restoring also requires manual file selection, a preview and confirmation. The default is to merge with existing history. Replacement overwrites existing history after an additional confirmation.</p>
+  </section>
+  <section aria-labelledby="contact">
+    <h2 id="contact">7. Operator and contact</h2>
+    <p>Operator: Takumetal</p>
+    <p id="contact-details">X: <a href="https://x.com/takumetal55" target="_blank" rel="noopener noreferrer">@takumetal55</a> (DM, reply or mention)</p>
+    <p>If you contact the operator on X, your X account name and message content will be reviewed and used as needed to answer your request and address issues. Public replies and mentions can be read by others, so do not include individual purchase details. Data handled by X is subject to X's privacy policy.</p>
+    <p>Do not attach purchase-history CSV files, backups, cookies, passwords or tokens to support requests. Hide purchase information and account names in any screenshots you choose to send.</p>
+  </section>
+  <section aria-labelledby="changes">
+    <h2 id="changes">8. Changes to this policy</h2>
+    <p>When features or data handling change, the policy and its last-updated date will be revised in the copy included with the extension.</p>
+  </section>
+  <section aria-labelledby="website">
+    <h2 id="website">9. Reading the web version</h2>
+    <p>The web version is hosted on GitHub Pages. When you visit it, GitHub logs and stores your IP address for security purposes. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a> for details.</p>
+    <p>This visit does not transmit purchase history. Opening the policy bundled with the extension does not connect to GitHub. The operator adds no analytics or advertising to the policy pages.</p>
+  </section>
+</main>
+</body>
+</html>
